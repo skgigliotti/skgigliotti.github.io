@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sophiastyle.css">
+<script src = "fotoController.js"></script>
+<script src = "navController.js"></script>
+
+<body>
+  <div style="padding-left:64px;"><h2>
+    <div style="color:#8375A5;display:inline;" > Sophia </div>
+      Gigliotti <img class="profilem" src="fotos\profilem.png"
+      ></h2> </div>
+
+  <!-- nav bar -->
+
+  <nav>
+
+
+    <a href="start.html" style="text-decoration: none; color: white;"><span class="dotS" style="margin: 0px 20px 0px 75px;" onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Home</div></span></a>
+
+    <a href="cs.html" style="text-decoration: none"><span class="dotM" onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Computer Science</div></span></a>
+
+    <a href="language.html" style="text-decoration: none"><span class="dotS"onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Language</div></span></a> &nbsp;&nbsp;&nbsp;
+
+    <a href="fotos.html" style="text-decoration: none"><span class="dotM"onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Photos + Design</div></span></a>
+
+    <a href="resume.html" style="text-decoration: none"><span class="dotS"onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Resume</div></span></a>
+
+  </nav>
+  <!-- Slide Show -->
+  <section>
+    <div class="row">
+
+      <div class="column">
+        <img id="myImg" class="fotos" src="fotos\roses.jpg"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)"
+        alt="rosasEnGuerra">
+
+        <img class="fotos" src="fotos\fascination.jpg"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)"
+        alt="fascination">
+
+        <img class="fotos" src="fotos\kandinsky.jpg" alt="kandinsky"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)" style="margin-right: 15px;">
+
+      </div>
+      <div class="column">
+        <img class="fotos" src="fotos\getty.jpg"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)"
+        alt="curiosity">
+
+
+        <img class="fotos" src="fotos\dandy.jpg"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)"
+        alt="wish">
+
+
+        <img class="fotos" src="fotos\elcentro.jpg"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)"
+        alt="vidaEnElCentro" style="margin-right: 15px;">
+
+      </div>
+      
+      <div class="column">
+        <img class="fotos" src="fotos\face2.jpg" alt="speakDown"
+        onmouseover="enlarge(this)"
+        onmouseout="normalSize(this)">
+
+      </div>
+    </div>
+
+
+
+</section>
+
+</body>
+</html>
