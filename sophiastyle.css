@@ -28,6 +28,7 @@ p {
     color:#5D586B;
     font-size: 20px;
     margin-left: 90px;
+    margin-right: 90px;
 }
 
 p2 {
@@ -107,6 +108,13 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.centeredLow {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 a{
   text-decoration: none;
