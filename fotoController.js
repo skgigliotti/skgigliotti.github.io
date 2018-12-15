@@ -8,3 +8,6 @@ function enlarge(f) {
 function normalSize(f) {
   // f.style.width = "25%";
 }
+$( function() {
+    $( "#dialog" ).dialog();
+  } );
