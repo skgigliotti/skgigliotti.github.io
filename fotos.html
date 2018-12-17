@@ -9,7 +9,7 @@
 <body>
   <div style="padding-left:64px;"><h2>
     <div style="color:#8375A5;display:inline;" > Sophia </div>
-      Gigliotti <img class="profilem" src="fotos\profilem.png"
+      Gigliotti <img class="profilem" src="fotos\sop.png" style="width: 6%; margin-left: 45px;"
       ></h2> </div>
 
   <!-- nav bar -->
@@ -34,68 +34,74 @@
   <br>
   <br>
   <section>
+    <!-- The Window -->
+    <div id="myDisplay" class="display">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- The actual photo -->
+      <img class="foto-to-display" id="toDisp">
+
+      <!-- Photo Caption -->
+      <div id="caption"></div>
+    </div>
+
     <div class="row">
 
       <div class="column">
-        <img id="myImg" class="fotos" src="fotos\roses.jpg"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)"
-        alt="rosasEnGuerra">
+        <img id="im" class="fotos" src="fotos\roses.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Rosas en guerra">
 
-        <img class="fotos" src="fotos\fascination.jpg"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)"
-        alt="fascination">
+        <img id= "im" class="fotos" src="fotos\fascination.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Fascination">
 
-        <img class="fotos" src="fotos\kandinsky.jpg" alt="kandinsky"
-        onmouseover="enlarge(this)"
+        <img id= "im" class="fotos" src="fotos\kandinsky.jpg" alt="Inspired by Kandinsky"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
         onmouseout="normalSize(this)" style="margin-right: 15px;">
 
       </div>
       <div class="column">
-        <img class="fotos" src="fotos\getty.jpg"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)"
-        alt="curiosity">
+        <img id= "im" class="fotos" src="fotos\getty.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Curiosity">
 
 
-        <img class="fotos" src="fotos\dandy.jpg"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)"
-        alt="wish">
+        <img id= "im" class="fotos" src="fotos\dandy.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Word Art">
 
 
-        <img class="fotos" src="fotos\elcentro.jpg"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)"
-        alt="vidaEnElCentro" style="margin-right: 15px;">
+        <img id= "im" class="fotos" src="fotos\elcentro.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Vida del centro" style="margin-right: 15px;">
 
       </div>
 
       <div class="column">
-        <img class="fotos" src="fotos\face2.jpg" alt="speakDown"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)">
+        <img id= "im" class="fotos" src="fotos\face2.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Speak Down">
 
-        <img class="fotos" src="fotos\vincent2.jpg" alt="regret"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)">
+        <img id= "im" class="fotos" src="fotos\vincent2.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Regret (piece from my concentration)">
 
-        <img class="fotos" src="fotos\dante_city.jpg" alt="brother"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)"style="margin-right: 15px;">
-
-
-
+        <img id= "im" class="fotos" src="fotos\dante_city.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Los Angeles" style="margin-right: 15px;">
 
       </div>
       <div class="column">
-        <img class="fotos" src="fotos\bridge.jpg" alt="goldenGate"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)">
-        <img class="fotos" src="fotos\sunset.jpg" alt="goldenHour"
-        onmouseover="enlarge(this)"
-        onmouseout="normalSize(this)">
+        <img id= "im" class="fotos" src="fotos\bridge.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+        alt="Golden Gate">
+
+        <img id= "im" class="fotos" src="fotos\sunset.jpg"
+        onmouseover="enlarge(this, myDisplay,toDisp, caption)" style="margin-right: 15px;"
+        alt="San Diego">
 
       </div>
     </div>
