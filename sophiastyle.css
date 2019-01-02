@@ -189,3 +189,16 @@ adapted from: https://www.w3schools.com/howto/howto_css_modal_images.asp
   text-decoration: none;
   cursor: pointer;
 }
+.column1 {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  margin-right: 95px;
+}
+
+
+.row1 {
+  content: "";
+  display: table;
+  clear: both;
+}
