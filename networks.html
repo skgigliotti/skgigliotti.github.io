@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="sophiastyle.css">
+<script src = "navController.js"></script>
+<script src = "fotoController.js"></script>
+<head>
+<div style="padding-left:64px;"><h2>
+  <div style="color:#8375A5;display:inline;" > Sophia </div>
+    Gigliotti <img class="profilem" src="fotos\sop.png" style="width: 6%; margin-left: 45px;"
+    ></h2> </div>
+
+    <nav>
+
+
+      <a href="index.html" style="text-decoration: none; color: white;"><span class="dotS" style="margin: 0px 20px 0px 75px;" onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Home</div></span></a>
+
+      <a href="cs.html" style="text-decoration: none"><span class="dotM" onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Computer Science</div></span></a>
+
+      <a href="language.html" style="text-decoration: none"><span class="dotS"onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Language</div></span></a> &nbsp;&nbsp;&nbsp;
+
+      <a href="fotos.html" style="text-decoration: none"><span class="dotM"onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Photos + Design</div></span></a>
+
+      <a href="resume.html" style="text-decoration: none"><span class="dotS"onmouseover="darken(this)" onmouseout="normal(this)"><div class="centered">Resume</div></span></a>
+
+    </nav>
+</head>
+<br>
+<br>
+<div><h1>
+  Networking Concept Art
+</h1>
+<p>
+  Computer Networks was one of the courses that challenged me the most in college.
+  I looked to many resources, but ultimately was unsatisfied with what I found.
+  Thus, I created my own graphics to help me (and others) learn!
+</p>
+
+<selection>
+  <!-- The Window -->
+
+  <!-- adapted from: https://www.w3schools.com/howto/howto_css_modal_images.asp-->
+  <div id="myDisplay" class="display">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- The actual photo -->
+    <img class="foto-to-display" id="toDisp">
+
+    <!-- Photo Caption -->
+    <div id="caption"></div>
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <img id="im" class="fotos" src="Concept_Art\data_communications.jpg"
+      onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+      alt="Data Communications">
+
+      <img id= "im" class="fotos" src="Concept_Art\transmission_media.jpg"
+      onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+      alt="Transmission Media">
+
+      <img id= "im" class="fotos" src="Concept_Art\tcp_ip_model.jpg"
+      onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+      alt="Transmission Media">
+
+    </div>
+    <div class="column">
+      <img id= "im" class="fotos" src="Concept_Art\manchester_encoding.jpg"
+      onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+      alt="Manchester Encoding">
+
+
+      <img id= "im" class="fotos" src="Concept_Art\diff_manchester_encoding.jpg"
+      onmouseover="enlarge(this, myDisplay,toDisp, caption)"
+      alt="Differential Manchester Encoding">
+
+
+    </div>
+</selection>
+
+</div>
+<br>
+<br>
+
+<br>
+ <br>
+
+</html>
