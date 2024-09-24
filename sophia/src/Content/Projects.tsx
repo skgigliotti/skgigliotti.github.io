@@ -1,4 +1,5 @@
-import { Breadcrumb, Card, Flex, Layout, Menu, MenuProps, theme } from 'antd';
+import { Card, Flex, Modal } from 'antd';
+import { useState } from 'react';
 
 const { Meta } = Card;
 
@@ -6,7 +7,17 @@ const cardStyle = {width: '25em', fontSize: '18px'}
 const imgStyle = {width: '100%'}
 const imgContainerStyle = { overflow: "hidden", height: "8em" }
 
+
 function Projects() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <Flex gap='4em' wrap justify='left'>
@@ -20,10 +31,12 @@ function Projects() {
             </div>}
         style={cardStyle}>
     <Meta
-      title={<a href='https://skgigliotti.github.io/fridge-poetry/' target='blank'>Fridge Poetry</a>}
+      title={<a onClick={showModal}>Fridge Poetry</a>}
       description="Project to learn about React and deepen knowledge of Flexbox and responsive design"
     />
-
+    <Modal width='75%' styles={{body: {height: '75em'}}} title="Fridge Poetry" open={isModalOpen} footer={null} onCancel={handleCancel}>
+        <iframe style={{ width: '100%', height: '100%' }} src='https://skgigliotti.github.io/fridge-poetry/'></iframe>
+    </Modal>
     </Card>
     <Card 
         cover={
@@ -35,7 +48,7 @@ function Projects() {
             </div>}
         style={cardStyle}>
     <Meta
-      title={<a href='' target='blank'>Lost in Translation</a>}
+      title='Lost in Translation'
       description='Capstone project to combine both college majors, Computer Science and Spanish Language, that used Markov models and sentiment analysis to compare human and computer translation accuracy'
     />
     </Card>
