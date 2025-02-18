@@ -25,6 +25,20 @@ function Projects() {
         cover={
             <div style={imgContainerStyle}>
                 <img 
+                    alt='Screenshot of the Fetch, Compare, Build app'
+                    style={imgStyle}
+                    src={require("./images/fetch_compare_build.png")}/>
+            </div>}
+        style={cardStyle}>
+    <Meta
+      title={<a href='https://github.com/ASTHA22/Hack-for-social-impact---Bay-area-affordable-housing-development' target='blank'>Fetch, Compare, Build</a>}
+      description="Hackathon project to retreive and compare building codes to help developers maximize housing resources in the Bay Area, created with Fetch.ai agents. Placed in the top 10 projects."
+    />
+    </Card>
+    <Card 
+        cover={
+            <div style={imgContainerStyle}>
+                <img 
                     alt='Virtual magnets creating poetry on a virual fridge'
                     style={imgStyle}
                     src={require("./images/letters.jpg")}/>
