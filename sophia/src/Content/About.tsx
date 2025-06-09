@@ -12,7 +12,7 @@ function About() {
       I also have experience with modern-day web frameworks, such as Django, Rails, and React. 
       My background in consulting and current role as a customer-facing engineer, have taught me to effectively collaborate with engineers, product, and customers alike.
       You'll regularly find me teaching Python in my free time.
-      I am based in the Bay Area  🌁</p>
+      I am based in the Bay Area  🌁 </p>
     
   );
 }
