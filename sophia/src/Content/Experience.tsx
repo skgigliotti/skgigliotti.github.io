@@ -2,7 +2,7 @@ function Experience() {
     return (
         <p>
             <li>
-                Winnie: Increasing accessibility of early childhood education by developing a robust marketplace to connect families looking for care with local providers. Work on search algorithm, 3rd party interations, and data as a fullstack developer at a start up.
+                Winnie: Increasing accessibility of early childhood education by developing a robust marketplace to connect families looking for care with local providers. Work on search algorithm, 3rd party interations, and internal business logic as a fullstack developer at a start up.
             </li>
             <li>
                 <a target='_blank' href='https://www.westmont.edu/westmont-students-design-college-software'>Salesforce</a>: Spearheaded development for a pilot program to migrate college infrastructure using Education Data Architecture (EDA), Lightning Web Components (LWC), and Apex triggers.
