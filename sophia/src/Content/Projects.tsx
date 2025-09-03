@@ -18,9 +18,36 @@ function Projects() {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+
+  const showMapModal = () => {
+    setIsMapModalOpen(true);
+  };
+
+  const handleMapCancel = () => {
+    setIsMapModalOpen(false);
+  };
 
   return (
     <Flex gap='4em' wrap justify='left'>
+    <Card 
+        cover={
+            <div style={imgContainerStyle}>
+                <img 
+                    alt='Screenshot of map of SF from Weather or Not project'
+                    style={imgStyle}
+                    src={require("./images/weather_or_not.png")}/>
+            </div>}
+        style={cardStyle}>
+    <Meta
+      title={<a onClick={showMapModal}>Weather or Not</a>}
+      description="App to see detailed stats about microclimates in SF and learn Streamlit."
+    />
+    <Modal width='75%' styles={{body: {height: '75em'}}} title="Weather or Not" open={isMapModalOpen} footer={null} onCancel={handleMapCancel}>
+        <iframe style={{ width: '100%', height: '100%' }} src='https://weather-or-not.streamlit.app?embed=true'></iframe>
+    </Modal>
+    </Card>
     <Card 
         cover={
             <div style={imgContainerStyle}>
