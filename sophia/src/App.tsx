@@ -22,10 +22,10 @@ function App() {
       <Content style={{backgroundColor: '#ffffff', minHeight: '75%', padding: '4em'}}>
         <Title level={2}>About</Title>
         <About/>
-        <Title level={2}>Experience</Title>
-        <Experience/>
         <Title level={2}>Projects</Title>
         <Projects/>
+        <Title level={2}>Experience</Title>
+        <Experience/>
       </Content>
       <Footer style={{ textAlign: 'center', backgroundColor: '#ffffff' }}>
         ©{new Date().getFullYear()} Sophia Gigliotti
